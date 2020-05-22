@@ -193,6 +193,10 @@ body .pinned-cheer-v2 {
   display: none !important;
 }
 
+.hide-channel-leaderboard {
+  display: none !important;
+}
+
 /*body .tw-z-default {
   display: none !important;
 }*/

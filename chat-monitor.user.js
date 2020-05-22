@@ -54,6 +54,11 @@ var configFields = {
     type: "checkbox",
     default: true
   },
+  HideChannelLeaderboard: {
+    label: "Hide Channel Leaderboard",
+    type: "checkbox",
+    default: false
+  },
   ReverseDirection: {
     label: "New messages appear on top",
     type: "checkbox",
@@ -180,6 +185,10 @@ function loadSettings() {
   //Hide chat interface
   if (GM_config.get("HideChatInput")) {
     document.querySelector(".chat-input").classList.add("tw-hide");
+  }
+
+  if(GM_config.get("HideChannelLeaderboard")) {
+    document.querySelector(".channel-leaderboard").classList.add("tw-hide")
   }
 
   //Check if we should be adding inline images or not
