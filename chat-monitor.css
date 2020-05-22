@@ -47,7 +47,7 @@ body {
 .chat-line__message.odd {
   background-color: #111 !important;
 }
-.chat-list .tw-full-height > .chat-line__message,
+.chat-list .chat-scrollable-area__message-container > .chat-line__message,
 .chat-line__status,
 .user-notice-line {
   padding: 3px 1px 3px 6px !important;
